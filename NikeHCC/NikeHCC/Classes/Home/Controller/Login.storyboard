@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3vc-DM-qBp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="8Ft-os-rLF">
+            <objects>
+                <viewController id="3vc-DM-qBp" customClass="LaunchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ru1-HT-NNQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="dRF-SI-k3O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Fh-hc-39x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccK-MO-pT5">
+                                <rect key="frame" x="164" y="319" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.1019607843" green="0.48627450979999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="JU2-Wz-kV0" kind="presentation" identifier="NeedLoginSegue" id="X4i-6p-u9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OT-2A-Yrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303.5" y="453.5"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="IGn-IU-hme">
+            <objects>
+                <navigationController id="JU2-Wz-kV0" customClass="NavigationViewController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KFj-rS-JMy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gb6-vS-XZ3" kind="relationship" relationship="rootViewController" id="MQe-e9-4Ew"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tY5-Mu-y7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799.5" y="453.5"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Zpv-3h-Vnr">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Gb6-vS-XZ3" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L98-Ia-s18"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tpy-Tg-lJg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LF5-SX-Vtz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-Gj-1gB">
+                                <rect key="frame" x="164" y="319" width="46" height="30"/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="evetn:" destination="Gb6-vS-XZ3" eventType="touchUpInside" id="XG0-j7-Esn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnb-lM-wbx">
+                                <rect key="frame" x="164" y="418" width="46" height="30"/>
+                                <state key="normal" title="注册"/>
+                                <connections>
+                                    <segue destination="IMm-V0-ZXQ" kind="show" id="JcU-11-nn1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sRF-zf-eju"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0R-kz-pQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295.5" y="453.5"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="jKp-n3-rVT">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="IMm-V0-ZXQ" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xXI-sP-Kk7"/>
+                        <viewControllerLayoutGuide type="bottom" id="NCY-lk-HdR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GPY-EJ-BYo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-7N-a4J">
+                                <rect key="frame" x="186" y="319" width="46" height="30"/>
+                                <state key="normal" title="注册"/>
+                            </button>
+                        </subviews>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrO-IY-ss1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748.5" y="453.5"/>
+        </scene>
+    </scenes>
+</document>
