@@ -8,17 +8,9 @@
 
 #import "LoginViewController.h"
 #import "HomePageViewController.h"
-//#import "FormValidator.h"
-//#import "MBProgressHUD+Extend.h"
-//#import "MainViewController.h"
-//#import "GQRequest.h"
-//#import "SignUpViewController.h"
-//#import "WXUserDefault.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
-//@property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
-//@property (weak, nonatomic) IBOutlet UITextField *passwordText;
-//@property (nonatomic,strong)ValidatorHelper* helper;
+
 @end
 
 @implementation LoginViewController
